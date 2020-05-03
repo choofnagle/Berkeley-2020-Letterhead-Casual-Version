@@ -13,7 +13,6 @@
 \documentclass[12pt,letterpaper]{letter} %this controls the paper style and font size
 \usepackage{graphicx} % necessary for logos
 \usepackage{lipsum} %you can delete this
-\usepackage{parskip} % for spacing
 \usepackage{geometry} % so that page 2> have 1" margins
 \usepackage{fancyhdr} % for fancy headers
 \usepackage{xcolor}
@@ -44,8 +43,6 @@ BoldItalicFont = UCBerkeleyOSBoldItalic.otf ]
 \def\TEL{Phone: (510) 642--0000} % Your phone number
 \def\TELM{Mobile: (510) XXX--XXXX} % Do you dare put your mobile here? How about a fax?
 \def\URL{https://*.berkeley.edu} % Your URL
-\signature{\Who{}} 
-
 
 \topmargin=-1.1in % Moves the top margin; here it is a negative value to move the text up
 \textheight=9.5in % Total text height for this page
@@ -55,8 +52,7 @@ BoldItalicFont = UCBerkeleyOSBoldItalic.otf ]
 
 \begin{document}
 
-\begin{letter}{Recipient name \\ Street\\ City\\ Country \\ [\parskip]
-Re:} %put the recipient information here and maybe a reference line
+\begin{letter}{Recipient name \\ Street\\ City\\ Country \\ \medskip Re:} %put the recipient information here and maybe a reference line
 
 % This controls the header. It places the Berkeley wordmark on the left, two columns with name and address in the center, and the seal on the right. You can adjust the textwidth allocations to balance out the columns.
 
@@ -122,8 +118,7 @@ I seek fresh perfumes, larger flowers, pleasures hitherto unknown. If anywhere I
 
 \closing{Sincerely,}
 % \includegraphics[]{} You can put an image of your signature here.
-\signature 
-
+\Who{}
 
 \ps{P.S. Fiat Lux}
 
